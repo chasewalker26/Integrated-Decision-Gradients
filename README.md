@@ -18,14 +18,12 @@ The location of the IDG source code is in AttributionMethods.py
 
 Example Usage
 ---
-
 This repository provides an example notebook example.ipynb
  * It showcases the use of IDG, as well as provides a visual comparison with IG, LIG, GIG, and AGI.
- * The img/ folder provides four correctly classified imagenet images for experimentation
+ * The img/ folder provides four correctly classified ImageNet images for experimentation
 
 Replicating the Paper Results
 ---
-
 The test results of the paper, and the comparisons shown in the supplementary results can be replicated with the testScript.py and allAttrComp.py files.
 
 #### testScript.py Usage:
@@ -35,7 +33,7 @@ The test results of the paper, and the comparisons shown in the supplementary re
 
 * To test IG with a pre-trained ResNet101 model on 2012 ImageNet validation data, use the following command:
   * `python3 supplementaryCode/testScript.py --function IG  --image_count 5000 --model R101 --imagenet <DIR_TO_FOLDER>`
-  * Where `<DIR_TO_FOLDER>` points to the 2012 imagenet 50k validation set, and files in the folder should of the structure: "ILSVRC2012_val_00000001.JPEG"
+  * Where `<DIR_TO_FOLDER>` points to the 2012 ImageNet 50k validation set, and files in the folder should of the structure: "ILSVRC2012_val_00000001.JPEG"
 
 * To perform the comprehensive test suite seen in the paper, the following command would be used:
     * `python3 supplementaryCode/testScript.py --function <attr_method> --image_count 5000 --model <model> --imagenet <DIR_TO_FOLDER>`
@@ -47,5 +45,3 @@ The test results of the paper, and the comparisons shown in the supplementary re
 * To generate 50 comparisons using ResNet101 use this script as:
    * `python3 supplementaryCode/allAttrComp.py --image_count 50 R101 --model --imagenet <DIR_TO_FOLDER> --file_name <FILE_TO_SAVE>`
    * Where `<FILE_TO_SAVE>` is the location and name of the output PDF
-
-
