@@ -19,8 +19,8 @@ The location of the IDG source code is in AttributionMethods.py
 Example Usage
 ---
 
-This repository provides an example notebook
- * example.ipynb showcases the use of IDG, as well as provides a visual comparison with IG, LIG, GIG, and AGI.
+This repository provides an example notebook example.ipynb
+ * It showcases the use of IDG, as well as provides a visual comparison with IG, LIG, GIG, and AGI.
  * The img/ folder provides four correctly classified imagenet images for experimentation
 
 Replicating the Paper Results
