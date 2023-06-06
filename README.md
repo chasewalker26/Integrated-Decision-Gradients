@@ -1,13 +1,13 @@
 # Integrated Decision Gradients (IDG)
 The PyTorch implementation of the paper: 
- * Integrated Decision Gradients: Compute Your Attributions Where the Model Makes Its Decision - [ArXiv Link](NULL)
+ * Integrated Decision Gradients: Compute Your Attributions Where the Model Makes Its Decision - [ArXiv Link](https://arxiv.org/abs/2305.20052v1)
 
 **To cite this software please use:**
 
-    @article{Walker2023IDG,
+    @article{walker2023integrated,
       title={Integrated Decision Gradients: Compute Your Attributions Where the Model Makes Its Decision},
       author={Walker, Chase and Jha, Sumit and Chen, Kenny and Ewetz, Rickard},
-      journal={arXiv preprint arXiv:SAMPLE\_ARXIV\_CODE},
+      journal={arXiv preprint arXiv:2305.20052},
       year={2023}
     }
 
