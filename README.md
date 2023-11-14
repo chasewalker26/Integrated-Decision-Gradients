@@ -1,4 +1,4 @@
-# Integrated Decision Gradients (IDG)
+# Integrated Decision Gradients (IDG) PyTorch
 The PyTorch implementation of the paper: 
  * Integrated Decision Gradients: Compute Your Attributions Where the Model Makes Its Decision - [ArXiv Link](https://arxiv.org/abs/2305.20052v1)
 
