@@ -38,7 +38,7 @@ The test results of the paper, and the comparisons shown in the supplementary re
 * To perform the comprehensive test suite seen in the paper, the following command would be used:
     * `python3 testScript.py --function <attr_method> --image_count 5000 --model <model> --imagenet <DIR_TO_FOLDER>`
     * Where `<attr_method> = {IG, LIG, GIG, AGI, IDG}` and `<model> = {R101, R152, RNXT}`
-    * For a total of 16 commands
+    * For a total of 15 script runs
 
 #### allAttrComp.py Usage:
 * Generates a PDF comparing the attribution methods as seen in the supplementary material and the qualitative results.
