@@ -13,7 +13,7 @@ The PyTorch implementation of the paper:
     
 Supplementary Materials
 ---
-The supplementary materials for the AAAI paper are located in this repository as a pdf. Thhey contained referenced materials from the main paper for additional support of IDG.
+The supplementary materials for the AAAI paper are located in this repository as a pdf. They contain referenced materials from the main paper for additional support of IDG.
 
 Source Code
 ---
