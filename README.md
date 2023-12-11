@@ -14,34 +14,28 @@ The PyTorch implementation of the paper:
 
 Source Code
 ---
-The location of the IDG source code is in AttributionMethods.py
+The location of the IDG source code is in util/attribution_methods/saliencyMethods.py
 
 Example Usage
 ---
-This repository provides an example notebook example.ipynb
+Inside of IDG/ is an example notebook example.ipynb
  * It showcases the use of IDG, as well as provides a visual comparison with IG, LIG, GIG, and AGI.
  * The img/ folder provides four correctly classified ImageNet images for experimentation
 
 Replicating the Paper Results
 ---
-The test results of the paper, and the comparisons shown in the supplementary results can be replicated with the testScript.py and allAttrComp.py files.
+The test results of the main paper are replicated with IDG/evaluations/evalOnImageNet.py.
 
-#### testScript.py Usage:
-  * This was used to generate all quantitative results for the paper. 
-  * Results will be saved in a folder called "tests".
-     * Each test (attribution and scoring method) will be saved as an image of a graph, and a csv file so custom graphs can be generated. 
+#### evalOnImageNet.py Usage:
+  * Run the script from IDG/evaluations/
+  * Results will be saved in a folder called "test_results" in the IDG directory.
+     * The results of each test (attribution and scoring method) will be saved as a appropriately named csv file. 
 
-* To test IG with a pre-trained ResNet101 model on 2012 ImageNet validation data, use the following command:
-  * `python3 testScript.py --function IG  --image_count 5000 --model R101 --imagenet <DIR_TO_FOLDER>`
+* To test IG with a pytorch pre-trained ResNet101 model on 2012 ImageNet validation data, use the following command:
+  * `python3 evalOnImageNet.py --function IG  --image_count 5000 --model R101 --imagenet <DIR_TO_FOLDER>`
   * Where `<DIR_TO_FOLDER>` points to the 2012 ImageNet 50k validation set, and files in the folder should of the structure: "ILSVRC2012_val_00000001.JPEG"
 
 * To perform the comprehensive test suite seen in the paper, the following command would be used:
-    * `python3 testScript.py --function <attr_method> --image_count 5000 --model <model> --imagenet <DIR_TO_FOLDER>`
+    * `python3 evalOnImageNet.py --function <attr_method> --image_count 5000 --model <model> --imagenet <DIR_TO_FOLDER>`
     * Where `<attr_method> = {IG, LIG, GIG, AGI, IDG}` and `<model> = {R101, R152, RNXT}`
     * For a total of 15 script runs
-
-#### allAttrComp.py Usage:
-* Generates a PDF comparing the attribution methods as seen in the supplementary material and the qualitative results.
-* To generate 50 comparisons using ResNet101 use this script as:
-   * `python3 allAttrComp.py --image_count 50 R101 --model --imagenet <DIR_TO_FOLDER> --file_name <FILE_TO_SAVE>`
-   * Where `<FILE_TO_SAVE>` is the location and name of the output PDF
