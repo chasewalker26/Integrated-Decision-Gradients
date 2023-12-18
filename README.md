@@ -11,10 +11,6 @@ The PyTorch implementation of the paper:
       year={2023}
     }
     
-Supplementary Materials
----
-The supplementary materials for the AAAI paper are located in this repository as a pdf. They contain referenced materials from the main paper for additional support of IDG.
-
 Source Code
 ---
 The location of the IDG source code is in util/attribution_methods/saliencyMethods.py
