@@ -4,6 +4,7 @@ The PyTorch implementation of the paper:
  * Extended Version of IDG Paper - [ArXiv Link](https://arxiv.org/abs/2305.20052v2)
 
 **To cite this software please use:**
+```
     @article{walker2024integrated, 
         title={Integrated Decision Gradients: Compute Your Attributions Where the Model Makes Its Decision}, 
         volume={38}, url={https://ojs.aaai.org/index.php/AAAI/article/view/28336}, 
@@ -12,7 +13,7 @@ The PyTorch implementation of the paper:
         author={Walker, Chase and Jha, Sumit and Chen, Kenny and Ewetz, Rickard}, 
         year={2024}, month={Mar.}, pages={5289-5297} 
     }
-    
+```
 Source Code
 ---
 The location of the IDG source code is in util/attribution_methods/saliencyMethods.py
